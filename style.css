@@ -3,14 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --text-color: white;
+    --bg-url:url(./assets/bg-mobile.jpg)
+}
+
+.light{
+    --text-color:  black;
+    --bg-url: url(./assets/bg-mobile-light.jpg)
+}
+
 body{
 /*background:color image repeat position/size*/
-background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+background: var(--bg-url) no-repeat top center/cover;
 }
 body *{
     font-family: 'Inter', sans-serif;
         font-family: 'Nunito Sans', sans-serif;
-        color: #ffffff;
+        color: var(--text-color);
 }
 
 #container{
@@ -64,7 +74,7 @@ ul li a{
 
 ul li a:hover{
     background: rgba(255, 255, 255, 0.05);
-        border: 1.5px solid white;
+        border: 1.5px solid var(--text-color);
 }
 
 /*social-links*/
@@ -88,4 +98,10 @@ ul li a:hover{
 #social-links a:hover{
     background:rgba(255, 255, 255, 0.2);
     
+}
+
+footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
 }
