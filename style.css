@@ -53,11 +53,12 @@ body *{
 
 #profile p{
     font-weight: 500;
-        line-height: 24px;
-        margin: 8px;
+    line-height: 24px;
+    margin: 8px;
 }
 
 /*switch*/
+
 #switch{
     position: relative;
     width: 64px;
@@ -88,15 +89,14 @@ outline: 8px solid var(--highlit-color);
 }
 
 #switch span{
-    display: block;
-    
+    display: block; 
     width: 64px;
     height: 24px;
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 999px;
+    border-radius: 9999px;
 }
 
 /*Linkes*/
@@ -128,7 +128,7 @@ ul li a{
 
 ul li a:hover{
     background:var(--surface-color-hover);
-        border: 1.5px solid var(--text-color);
+    border: 1.5px solid var(--text-color);
 }
 
 /*social-links*/
@@ -145,8 +145,9 @@ ul li a:hover{
     align-items: center;
     justify-content: center;
     padding: 16px;
-    border-radius: 50%;
     transition: background 0.2s;
+    border-radius: 50%;
+   
 }
 
 #social-links a:hover{
@@ -162,7 +163,7 @@ footer{
 
 /*media queries*/
 
-@media( min-widht: 700px) {
+@media ( min-widht: 700px) {
     :root {
         --bg-url: url(./assets/bg-desktop.jpg);
     }
